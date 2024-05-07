@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mariadb
--- Generation Time: May 07, 2024 at 10:27 AM
+-- Generation Time: May 07, 2024 at 11:09 AM
 -- Server version: 11.3.2-MariaDB-1:11.3.2+maria~ubu2204
 -- PHP Version: 8.2.8
 
@@ -24,16 +24,16 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4prog`
+-- Table structure for table `Kaartspel`
 --
 
-CREATE TABLE `m4prog` (
+CREATE TABLE `Kaartspel` (
   `id` int(11) NOT NULL,
-  `Naam` varchar(150) NOT NULL,
-  `Eigenaar` varchar(150) NOT NULL,
-  `Typedier` varchar(80) NOT NULL,
-  `Leeftijd` int(11) NOT NULL,
-  `Geboortedatum` date NOT NULL
+  `kaartnaam` int(11) NOT NULL,
+  `kost` varchar(150) NOT NULL,
+  `aanval en verdediging` varchar(100) NOT NULL,
+  `flavor text` text NOT NULL,
+  `beschrijving` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -41,9 +41,9 @@ CREATE TABLE `m4prog` (
 --
 
 --
--- Indexes for table `m4prog`
+-- Indexes for table `Kaartspel`
 --
-ALTER TABLE `m4prog`
+ALTER TABLE `Kaartspel`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -51,9 +51,9 @@ ALTER TABLE `m4prog`
 --
 
 --
--- AUTO_INCREMENT for table `m4prog`
+-- AUTO_INCREMENT for table `Kaartspel`
 --
-ALTER TABLE `m4prog`
+ALTER TABLE `Kaartspel`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
